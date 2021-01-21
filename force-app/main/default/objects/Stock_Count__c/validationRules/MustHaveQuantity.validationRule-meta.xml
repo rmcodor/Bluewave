@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MustHaveQuantity</fullName>
+    <active>true</active>
+    <errorConditionFormula
+  >IF(ISBLANK(Stock_Count_Number__c),TRUE,FALSE)</errorConditionFormula>
+    <errorDisplayField>Stock_Count_Number__c</errorDisplayField>
+    <errorMessage>Please provide a stock count. value</errorMessage>
+</ValidationRule>

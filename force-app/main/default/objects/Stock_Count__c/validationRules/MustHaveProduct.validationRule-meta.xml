@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MustHaveProduct</fullName>
+    <active>true</active>
+    <description>The product must be populated and active</description>
+    <errorConditionFormula
+  >IF(ISBLANK(Product_Id__c),TRUE,FALSE)</errorConditionFormula>
+    <errorDisplayField>Product_Id__c</errorDisplayField>
+    <errorMessage
+  >To create a stock coun an active product must be provided.</errorMessage>
+</ValidationRule>
