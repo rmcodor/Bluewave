@@ -264,7 +264,7 @@ public class OpportunityProductHandlerTest {
           TestDataFactory.CreateOpportunityLineItem(
             opps[i].Id,
             priceBookEntries[i].Id,
-            i
+            i + 1 * 2
           )
         );
       }
